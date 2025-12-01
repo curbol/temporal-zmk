@@ -25,7 +25,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install keymap-drawer
-        run: pip install keymap-drawer
+        run: pip install 'keymap-drawer==0.18.0'
 
       - name: Parse keymap
         run: keymap -c keymap-drawer.yaml parse -z boards/shields/temporal/temporal.keymap -o keymap.yaml
