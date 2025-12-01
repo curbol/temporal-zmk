@@ -74,6 +74,14 @@ Copy the default keymap to your config folder and customize:
 curl -o config/temporal.keymap https://raw.githubusercontent.com/curbol/temporal-zmk/main/boards/shields/temporal/temporal.keymap
 ```
 
+### Keymap Editor
+
+To use with [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/), copy the layout file to your config folder:
+
+```bash
+curl -o config/temporal.json https://raw.githubusercontent.com/curbol/temporal-zmk/main/temporal.json
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
