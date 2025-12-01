@@ -1,0 +1,40 @@
+name: Draw Keymaps
+
+on:
+  push:
+    paths:
+      - "boards/shields/temporal/temporal.keymap"
+      - "keymap-drawer.yaml"
+      - "temporal.json"
+      - ".github/workflows/draw-keymaps.yml"
+  workflow_dispatch:
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse keymap
+        run: keymap -c keymap-drawer.yaml parse -z boards/shields/temporal/temporal.keymap -o keymap.yaml
+
+      - name: Draw keymap
+        run: keymap -c keymap-drawer.yaml draw keymap.yaml -j temporal.json -o images/keymap.svg
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update keymap images"
+          file_pattern: "images/*.svg"

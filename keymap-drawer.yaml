@@ -1,0 +1,29 @@
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 28
+  combo_h: 26
+  key_rx: 6
+  key_ry: 6
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 30
+  outer_pad_h: 30
+  line_spacing: 1.2
+  arc_radius: 6
+  svg_extra_style: |
+    svg {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .held {
+      fill: #ffc;
+    }
+
+parse_config:
+  zmk_keycode_map:
+    C_MUTE: MUTE
+    C_VOL_UP: VOL+
+    C_VOL_DN: VOL-
+    C_BRI_UP: BRI+
+    C_BRI_DN: BRI-

@@ -10,21 +10,9 @@ ZMK firmware module for the [Temporal keyboard](https://github.com/curbol/tempor
 - Deep sleep power management (30 min idle timeout)
 - Compatible with nice!nano v2 and other Pro Micro compatible controllers
 
-## Keyboard Layout
+## Keymap
 
-```
-Left Side                                          Right Side
-┌─────┬─────┬─────┬─────┬─────┬─────┐              ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│Extra│Pinky│Ring │ Mid │Index│Inner│              │Inner│Index│ Mid │Ring │Pinky│Extra│
-├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼─────┤
-│Extra│Pinky│Ring │ Mid │Index│Inner│              │Inner│Index│ Mid │Ring │Pinky│Extra│
-└─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼─────┘
-      │Pinky│Ring │ Mid │Index│Inner│              │Inner│Index│ Mid │Ring │Pinky│
-      └─────┴─────┴─────┴─────┴─────┘              └─────┴─────┴─────┴─────┴─────┘
-         ┌─────┬─────┬─────┬─────┬─────┐        ┌─────┬─────┬─────┬─────┬─────┐
-         │ Enc │Near │ Mid │ Far │Extra│        │Extra│ Far │ Mid │Near │ Enc │
-         └─────┴─────┴─────┴─────┴─────┘        └─────┴─────┴─────┴─────┴─────┘
-```
+![Temporal Keymap](images/keymap.svg)
 
 ## Usage
 
