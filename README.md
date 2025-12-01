@@ -60,8 +60,10 @@ In your `build.yaml`:
 include:
   - board: nice_nano_v2
     shield: temporal_left nice_view_adapter nice_view
+    artifact-name: temporal_left
   - board: nice_nano_v2
     shield: temporal_right nice_view_adapter nice_view
+    artifact-name: temporal_right
 ```
 
 ### Keymap
