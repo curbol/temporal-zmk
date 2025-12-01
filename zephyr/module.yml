@@ -1,0 +1,5 @@
+name: zmk-keyboard-temporal
+build:
+  settings:
+    board_root: .
+    shield_root: .

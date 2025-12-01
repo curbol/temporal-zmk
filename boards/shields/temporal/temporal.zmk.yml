@@ -1,0 +1,15 @@
+file_format: "1"
+id: temporal
+name: Temporal
+type: shield
+url: https://github.com/curbol/temporal
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+
+siblings:
+  - temporal_left
+  - temporal_right

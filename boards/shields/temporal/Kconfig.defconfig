@@ -1,0 +1,19 @@
+# Copyright (c) 2024 Curtis Bollinger
+# SPDX-License-Identifier: MIT
+
+if SHIELD_TEMPORAL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Temporal"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TEMPORAL_LEFT || SHIELD_TEMPORAL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

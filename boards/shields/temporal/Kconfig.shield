@@ -1,0 +1,8 @@
+# Copyright (c) 2024 Curtis Bollinger
+# SPDX-License-Identifier: MIT
+
+config SHIELD_TEMPORAL_LEFT
+    def_bool $(shields_list_contains,temporal_left)
+
+config SHIELD_TEMPORAL_RIGHT
+    def_bool $(shields_list_contains,temporal_right)

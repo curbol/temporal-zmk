@@ -1,0 +1,78 @@
+/*
+ * Copyright (c) 2024 Curtis Bollinger
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
+    };
+
+    /*
+     * Temporal keyboard matrix layout (44-key version)
+     *
+     * Physical layout per side:
+     * - 6 columns: extra, pinky, ring, middle, index, inner
+     * - 4 rows: top, home, bottom, thumb
+     * - Extra column skips bottom row
+     * - Thumb encoder on col_pinky position
+     *
+     * Left side:  columns 0-5  (extra=0, pinky=1, ring=2, middle=3, index=4, inner=5)
+     * Right side: columns 6-11 (inner=6, index=7, middle=8, ring=9, pinky=10, extra=11)
+     */
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <4>;
+        map = <
+            // Row 0: Top row (6 + 6 = 12 keys)
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)     RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11)
+            // Row 1: Home row (6 + 6 = 12 keys)
+            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)     RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11)
+            // Row 2: Bottom row (5 + 5 = 10 keys, no extra column)
+                    RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)     RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10)
+            // Row 3: Thumb row (5 + 5 = 10 keys, encoder + 4 thumb keys per side)
+                    RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)     RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10)
+        >;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+
+        diode-direction = "col2row";
+        row-gpios
+            = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // row_top
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // row_home
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // row_bottom
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // row_thumb
+            ;
+    };
+
+    // Encoder configuration
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "disabled";
+    };
+
+    right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "disabled";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
+};
