@@ -5,7 +5,6 @@ on:
     paths:
       - "boards/shields/temporal/temporal.keymap"
       - "keymap-drawer.yaml"
-      - "temporal.json"
       - ".github/workflows/draw-keymaps.yml"
   workflow_dispatch:
 
@@ -26,6 +25,9 @@ jobs:
 
       - name: Install keymap-drawer
         run: pip install 'keymap-drawer==0.18.0'
+
+      - name: Fetch temporal.json
+        run: curl -o temporal.json https://raw.githubusercontent.com/curbol/temporal/main/temporal.json
 
       - name: Parse keymap
         run: keymap -c keymap-drawer.yaml parse -z boards/shields/temporal/temporal.keymap -o keymap.yaml
