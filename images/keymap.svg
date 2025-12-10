@@ -162,11 +162,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">I</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">O</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">P</text>
 </g>
@@ -222,12 +222,12 @@ svg {
 <text x="0" y="0" class="key tap">L</text>
 <text x="0" y="24" class="key hold">LALT</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SEMI</text>
 <text x="0" y="24" class="key hold">LMETA</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SQT</text>
 </g>
@@ -235,7 +235,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">X</text>
 </g>
@@ -264,7 +264,7 @@ svg {
 <text x="0" y="0" class="key tap">COMMA</text>
 <text x="0" y="-24" class="key shifted">SEMI</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DOT</text>
 <text x="0" y="-24" class="key shifted">COLON</text>
@@ -317,7 +317,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RGUI</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">MUTE</text>
 </g>
@@ -362,11 +362,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">PRCNT</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DLLR</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">PIPE</text>
 </g>
@@ -421,12 +421,12 @@ svg {
 <text x="0" y="0" class="key tap">LBRC</text>
 <text x="0" y="24" class="key hold">LALT</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">FSLH</text>
 <text x="0" y="24" class="key hold">LMETA</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DQT</text>
 </g>
@@ -434,7 +434,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LBKT</text>
 </g>
@@ -462,7 +462,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">GT</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LT</text>
 </g>
@@ -505,7 +505,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key trans keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -550,11 +550,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">UP</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">END</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">UP</tspan>
@@ -608,14 +608,14 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RIGHT</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em">PG</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 <text x="0" y="24" class="key hold">LMETA</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key trans keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -623,7 +623,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">1</text>
 </g>
@@ -651,7 +651,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key trans keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -694,7 +694,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#game">
 <text x="0" y="0" class="key tap layer-activator">game</text>
@@ -741,11 +741,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key trans keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key trans keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -793,11 +793,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key trans keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key trans keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -805,7 +805,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LCTRL</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
 </g>
@@ -833,7 +833,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key trans keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -880,7 +880,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key trans keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -925,11 +925,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key trans keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key trans keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -978,11 +978,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key trans keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key trans keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -990,7 +990,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">1</text>
 </g>
@@ -1018,7 +1018,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key trans keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -1061,7 +1061,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key trans keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -1109,11 +1109,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(796, 60) rotate(4.0)" class="key trans keypos-9">
+<g transform="translate(797, 60) rotate(4.0)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(858, 108) rotate(10.0)" class="key trans keypos-10">
+<g transform="translate(859, 108) rotate(10.0)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -1161,11 +1161,11 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(850, 160) rotate(10.0)" class="key trans keypos-22">
+<g transform="translate(849, 160) rotate(10.0)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(899, 197) rotate(10.0)" class="key trans keypos-23">
+<g transform="translate(900, 197) rotate(10.0)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -1173,7 +1173,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(148, 166) rotate(-4.0)" class="key keypos-25">
+<g transform="translate(148, 165) rotate(-4.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F1</text>
 </g>
@@ -1202,7 +1202,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(789, 166) rotate(4.0)" class="key trans keypos-32">
+<g transform="translate(789, 165) rotate(4.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
@@ -1245,7 +1245,7 @@ svg {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(752, 230) rotate(10.0)" class="key trans keypos-43">
+<g transform="translate(753, 230) rotate(10.0)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
