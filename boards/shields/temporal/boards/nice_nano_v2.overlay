@@ -28,4 +28,20 @@ nice_view_spi: &spi0 {
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>; // P10 (CS)
+    status = "okay";
+
+    ls0xx: ls0xx@0 {
+        compatible = "sharp,ls0xx";
+        label = "DISPLAY";
+        spi-max-frequency = <1000000>;
+        reg = <0>;
+        width = <160>;
+        height = <68>;
+    };
+};
+
+/ {
+    chosen {
+        zephyr,display = &ls0xx;
+    };
 };
