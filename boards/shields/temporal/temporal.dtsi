@@ -56,9 +56,9 @@
     // Encoder configuration
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
+        a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <60>;
         status = "disabled";
     };
 
@@ -66,7 +66,7 @@
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
+        steps = <60>;
         status = "disabled";
     };
 
