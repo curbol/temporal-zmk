@@ -17,3 +17,14 @@ config ZMK_SPLIT
     default y
 
 endif
+
+# Display defaults when using nice_view
+if SHIELD_NICE_VIEW && (SHIELD_TEMPORAL_LEFT || SHIELD_TEMPORAL_RIGHT)
+
+config LV_Z_MEM_POOL_SIZE
+    default 8192
+
+config ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
+    default y if ZMK_DISPLAY
+
+endif
