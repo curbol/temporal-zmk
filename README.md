@@ -12,6 +12,8 @@ ZMK firmware module for the [Temporal keyboard](https://github.com/curbol/tempor
 
 ## Keymap
 
+The default keymap uses [Gallium](https://github.com/GalileoBlues/Gallium), an optimized layout for comfort and efficiency. You can use any layout you prefer by customizing the base layer in your personal zmk-config.
+
 ![Temporal Keymap](images/keymap.svg)
 
 ## Usage

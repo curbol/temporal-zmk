@@ -1,12 +1,8 @@
-/*
- * Copyright (c) 2024 Curtis Bollinger
- *
- * SPDX-License-Identifier: MIT
- */
+// Editor: https://nickcoutsos.github.io/keymap-editor/
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE    0
 #define SYMBOL  1
@@ -36,8 +32,8 @@
 
         hrm_l: hrm_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -49,8 +45,8 @@
 
         hrm_r: hrm_r {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -64,16 +60,16 @@
 
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_MORPH";
             bindings = <&kp COMMA>, <&comma_inner_morph>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
         comma_inner_morph: comma_inner_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_INNER_MORPH";
             bindings = <&kp SEMI>, <&kp LT>;
+
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
@@ -82,16 +78,16 @@
 
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_MORPH";
             bindings = <&kp DOT>, <&dot_inner_morph>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
         dot_inner_morph: dot_inner_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_INNER_MORPH";
             bindings = <&kp COLON>, <&kp GT>;
+
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
@@ -100,8 +96,8 @@
 
         qexcl: qexcl {
             compatible = "zmk,behavior-mod-morph";
-            label = "QEXCL";
             bindings = <&kp QMARK>, <&kp EXCL>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -110,8 +106,8 @@
 
         bksp_esc_morph: bksp_esc_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "BKSP_ESC_MORPH";
             bindings = <&kp BSPC>, <&kp ESC>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -120,8 +116,8 @@
 
         bt_clr: bt_clr {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT_CLR";
             bindings = <&bt BT_CLR>, <&bt BT_CLR_ALL>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -130,8 +126,8 @@
 
         magic_shift: magic_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_SHIFT";
             bindings = <&kp>, <&magic_shift_tap>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
@@ -140,10 +136,19 @@
 
         magic_shift_tap: magic_shift_tap {
             compatible = "zmk,behavior-mod-morph";
-            label = "MAGIC_SHIFT_TAP";
             bindings = <&sk LSHFT>, <&caps_word>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // Double-tap to go to game layer
+
+        td_to_game: td_to_game {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&none>, <&to GAME>;
         };
     };
 
@@ -166,97 +171,75 @@
 
         base_layer {
             display-name = "base";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                      |  Y   |  U    |  I    |  O   |   P   | BSPC  |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                      |  H   |  J    |  K    |  L   |   ;   |  '    |
-            //         |  Z  |  X  |  C   |  V   |  B   |                                      |  N   |  M    |  ,    |  .   |   /   |
-            //         | ENC | GUI | BSPC | SYM  | CTRL |                                      | SHFT | NAV   | TAB   | GUI  |  ENC  |
             bindings = <
-                &kp ESC   &kp Q           &kp W          &kp E            &kp R            &kp T              &kp Y      &kp U                 &kp I           &kp O          &kp P               &bksp_esc_morph
-                &kp TAB   &hrm_l LMETA A  &hrm_l LALT S  &hrm_l LSHFT D   &hrm_l LCTRL F   &kp G              &kp H      &hrm_r LCTRL J        &hrm_r RSHFT K  &hrm_r LALT L  &hrm_r LMETA SEMI   &kp SQT
-                          &kp Z           &kp X          &kp C            &kp V            &kp B              &kp N      &kp M                 &comma_morph    &dot_morph     &qexcl
-                          &kp C_MUTE      &kp LGUI       &bksp_esc_morph  &lt SYMBOL SPACE &kp LCTRL          &magic_shift LSHFT 0  &lt NUMNAV ENTER  &kp TAB   &kp RGUI       &kp C_MUTE
+&kp ESC  &kp B           &kp L          &kp D           &kp C            &kp V             &kp J             &kp Y                 &kp O           &kp U          &comma_morph    &trans
+&kp TAB  &hrm_l LMETA N  &hrm_l LALT R  &hrm_l LSHFT T  &hrm_l LCTRL S   &kp G             &kp P             &hrm_r LCTRL H        &hrm_r RSHFT A  &hrm_r LALT E  &hrm_r LMETA I  &kp GRAVE
+         &kp X           &kp Q          &kp M           &kp W            &kp Z             &kp K             &kp F                 &kp SQT         &qexcl         &dot_morph
+         &kp C_MUTE      &trans         &kp DEL         &bksp_esc_morph  &lt SYMBOL SPACE  &lt NUMNAV ENTER  &magic_shift LSHFT 0  &kp TAB         &td_to_game    &kp C_PP
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         symbol_layer {
             display-name = "symbol";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |   ~   |  @  |  #  |  &   |  *   |      |                                      |      |  ^    |  %    |  $   |  |    |       |
-            // |       |  \  |  (  |  )   |  +   |      |                                      |      |  -    |  }    |  {   |  /    |  "    |
-            //         |     |  [  |  ]   |  =   |      |                                      |      |  _    |  >    |  <   |  !    |
-            //         |     |     |      |      |      |                                      |      |       |       |      |       |
             bindings = <
-                &kp TILDE &kp AT             &kp HASH          &kp AMPS           &kp STAR           &trans             &trans  &kp CARET           &kp PRCNT          &kp DLLR          &kp PIPE              &trans
-                &trans    &hrm_l LMETA BSLH  &hrm_l LALT LPAR  &hrm_l LSHFT RPAR  &hrm_l LCTRL PLUS  &trans             &trans  &hrm_r LCTRL MINUS  &hrm_r RSHFT RBRC  &hrm_r LALT LBRC  &hrm_r LMETA FSLH     &kp DQT
-                          &trans             &kp LBKT          &kp RBKT           &kp EQUAL          &trans             &trans  &kp UNDER           &kp GT             &kp LT            &kp EXCL
-                          &trans             &trans            &trans             &trans             &trans             &trans  &trans              &trans             &trans            &trans
+&trans  &kp AT             &kp HASH          &kp LBKT           &kp RBKT           &trans  &trans    &kp UNDER           &kp PRCNT          &kp DLLR          &kp SEMI           &trans
+&trans  &hrm_l LMETA LPAR  &hrm_l LALT RPAR  &hrm_l LSHFT LBRC  &hrm_l LCTRL RBRC  &trans  &kp BSLH  &hrm_r LCTRL EQUAL  &hrm_r RSHFT FSLH  &hrm_r LALT STAR  &hrm_r LMETA AMPS  &kp TILDE
+        &kp PIPE           &kp CARET         &kp LT             &kp GT             &trans  &trans    &kp MINUS           &kp PLUS           &kp EXCL          &kp COLON
+        &trans             &trans            &trans             &trans             &trans  &trans    &trans              &trans             &trans            &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         numnav_layer {
             display-name = "numnav";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |     |  7  |  8   |  9   |      |                                      | VOL+ | HOME  |  UP   | END  | PGUP  |       |
-            // |       |  0  |  4  |  5   |  6   |      |                                      | VOL- | LEFT  | DOWN  | RGHT | PGDN  |       |
-            //         |     |  1  |  2   |  3   |      |                                      | PLAY |       |       |      |       |
-            //         |     |     |      |      |      |                                      |      |       |       |      |       |
             bindings = <
-                &trans  &trans           &kp N7          &kp N8           &kp N9           &trans             &kp C_VOL_UP  &kp HOME  &kp UP    &kp END    &kp PG_UP          &trans
-                &trans  &hrm_l LMETA N0  &hrm_l LALT N4  &hrm_l LSHFT N5  &hrm_l LCTRL N6  &trans             &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &hrm_r LMETA PG_DN &trans
-                        &trans           &kp N1          &kp N2           &kp N3           &trans             &kp C_PP      &trans    &trans    &trans     &trans
-                        &trans           &trans          &trans           &trans           &trans             &trans        &trans    &trans    &trans     &to GAME
+&trans  &trans           &kp N7          &kp N8           &kp N9           &trans  &trans  &kp HOME           &kp UP             &kp END            &kp PG_UP           &trans
+&trans  &hrm_l LMETA N0  &hrm_l LALT N4  &hrm_l LSHFT N5  &hrm_l LCTRL N6  &trans  &trans  &hrm_r LCTRL LEFT  &hrm_r RSHFT DOWN  &hrm_r LALT RIGHT  &hrm_r LMETA PG_DN  &trans
+        &trans           &kp N1          &kp N2           &kp N3           &trans  &trans  &kp MINUS          &kp PLUS           &trans             &trans
+        &trans           &trans          &trans           &trans           &trans  &trans  &trans             &trans             &trans             &trans
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         game_layer {
             display-name = "game";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  | TAB |  Q  |  W   |  E   |  R   |                                      |      |       |       |      |       |       |
-            // |   M   | SFT |  A  |  S   |  D   |  F   |                                      |      |       |       |      |       |       |
-            //         | CTL |  Z  |  X   |  C   |  V   |                                      |      |       |       |      |       |
-            //         |     | ALT | GM+  | SPC  |  G   |                                      | ENT  | BASE  |       |      |       |
             bindings = <
-                &kp ESC &kp TAB    &kp Q  &kp W     &kp E   &kp R             &trans     &trans  &trans  &trans  &trans  &trans
-                &kp M   &kp LSHFT  &kp A  &kp S     &kp D   &kp F             &trans     &trans  &trans  &trans  &trans  &trans
-                        &kp LCTRL  &kp Z  &kp X     &kp C   &kp V             &trans     &trans  &trans  &trans  &trans
-                        &trans     &kp LALT  &mo GAME_P  &kp SPACE  &kp G    &kp ENTER  &to BASE  &trans  &trans  &trans
+&kp ESC &kp G      &kp Q    &kp W     &kp E       &kp R      &trans  &trans  &trans  &trans   &trans  &trans
+&kp TAB &kp LSHFT  &kp A    &kp S     &kp D       &kp F      &trans  &trans  &trans  &trans   &trans  &trans
+        &kp LCTRL  &kp Z    &kp X     &kp C       &kp V      &trans  &trans  &trans  &trans   &trans
+        &trans     &mo FUNC &kp LALT  &mo GAME_P  &kp SPACE  &trans  &trans  &trans  &to BASE &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         game_plus_layer {
             display-name = "game+";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |  I  |  7  |  8   |  9   |  T   |                                      |      |       |       |      |       |       |
-            // |       | FN  |  4  |  5   |  6   |  G   |                                      |      |       |       |      |       |       |
-            //         |  J  |  1  |  2   |  3   |  B   |                                      |      |       |       |      |       |
-            //         |     |     |      |      |      |                                      |      |       |       |      |       |
             bindings = <
-                &trans     &kp I     &kp N7  &kp N8  &kp N9  &kp T             &trans  &trans  &trans  &trans  &trans  &trans
-                &trans     &mo FUNC  &kp N4  &kp N5  &kp N6  &kp G             &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp J     &kp N1  &kp N2  &kp N3  &kp B             &trans  &trans  &trans  &trans  &trans
-                           &trans    &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&kp J   &kp M   &kp N7  &kp N8  &kp N9  &kp T   &trans     &trans  &trans  &trans  &trans  &trans
+&kp L   &kp N   &kp N4  &kp N5  &kp N6  &kp H   &trans     &trans  &trans  &trans  &trans  &trans
+        &kp I   &kp N1  &kp N2  &kp N3  &kp B   &trans     &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans  &trans  &trans  &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_layer {
             display-name = "func";
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // | BTCLR |     |  F7 |  F8  |  F9  | F10  |                                      |      |       |       |      |       | RESET |
-            // |       |     |  F4 |  F5  |  F6  | F11  |                                      | BT0  |       |       |      |       |       |
-            //         |     |  F1 |  F2  |  F3  | F12  |                                      | BT1  |       |       |      |       |
-            //         |     |     |      |      |      |                                      |      |       |       |      |       |
             bindings = <
-                &bt_clr &trans  &kp F7  &kp F8  &kp F9  &kp F10            &trans        &trans  &trans  &trans  &trans  &sys_reset
-                &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11            &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp F1  &kp F2  &kp F3  &kp F12            &bt BT_SEL 1  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans             &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &bt_clr       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp F1  &kp F2  &kp F3  &kp F12  &bt BT_SEL 1  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans        &trans  &trans  &trans  &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
