@@ -13,13 +13,13 @@
     };
 
     /*
-     * Temporal keyboard matrix layout
+     * Temporal keyboard matrix layout (40-key version)
      *
      * Physical layout per side:
      * - 6 columns: extra, pinky, ring, middle, index, inner
      * - 4 rows: top, home, bottom, thumb
      * - Extra column skips bottom row
-     * - Thumb row has encoder + 3 keys per side
+     * - Thumb row has encoder + 3 keys per side (no inner column)
      *
      * Left side:  columns 0-5  (extra=0, pinky=1, ring=2, middle=3, index=4, inner=5)
      * Right side: columns 6-11 (inner=6, index=7, middle=8, ring=9, pinky=10, extra=11)
