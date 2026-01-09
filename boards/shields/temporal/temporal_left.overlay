@@ -9,7 +9,7 @@
 &kscan0 {
     col-gpios
         = <&pro_micro 21 GPIO_ACTIVE_HIGH>  // col_extra
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>  // col_pinky (also encoder switch)
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>  // col_pinky
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>  // col_ring
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>  // col_middle
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>  // col_index
