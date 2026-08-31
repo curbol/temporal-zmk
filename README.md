@@ -75,3 +75,7 @@ curl -o config/temporal.json https://raw.githubusercontent.com/curbol/temporal-z
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
+
+## Support
+
+<a href="https://ko-fi.com/curbol"><img height="42" alt="Buy Me a Coffee at ko-fi.com" src="https://storage.ko-fi.com/cdn/kofi1.png?v=6"></a>
