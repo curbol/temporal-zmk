@@ -186,9 +186,9 @@
         symbol_layer {
             display-name = "symbol";
             bindings = <
-&trans  &kp AT             &kp HASH          &kp LBRC           &kp RBRC           &trans     &kp PIPE  &kp TILDE           &kp MINUS          &kp PLUS          &kp SEMI           &trans
-&trans  &hrm_l LMETA LPAR  &hrm_l LALT RPAR  &hrm_l LSHFT LBKT  &hrm_l LCTRL RBKT  &kp PRCNT  &kp BSLH  &hrm_r LCTRL EQUAL  &hrm_r RSHFT FSLH  &hrm_r LALT STAR  &hrm_r LMETA AMPS  &trans
-        &kp CARET          &kp DLLR          &kp LT             &kp GT             &trans     &trans    &kp UNDER           &kp GRAVE          &kp EXCL          &kp COLON
+&trans  &kp AT             &kp HASH          &kp CARET          &kp DOLLAR         &trans     &kp PIPE  &kp MINUS           &kp STAR           &kp PLUS           &kp SEMI           &trans
+&trans  &hrm_l LMETA LBKT  &hrm_l LALT RBKT  &hrm_l LSHFT LPAR  &hrm_l LCTRL RPAR  &kp PRCNT  &kp BSLH  &hrm_r LCTRL TILDE  &hrm_r RSHFT FSLH  &hrm_r LALT EQUAL  &hrm_r LMETA AMPS  &trans
+        &kp LT             &kp GT            &kp LBRC           &kp RBRC           &trans     &trans    &kp UNDER           &kp GRAVE          &kp EXCL           &kp COLON
                            &trans            &trans             &trans             &trans     &trans    &trans              &trans             &trans
             >;
 
@@ -210,8 +210,8 @@
         game_layer {
             display-name = "game";
             bindings = <
-&trans  &kp G      &kp Q   &kp W     &kp E       &kp R      &trans     &trans  &trans  &trans    &trans  &trans
-&trans  &kp LSHFT  &kp A   &kp S     &kp D       &kp F      &trans     &kp H   &kp A   &kp E     &kp I   &trans
+&trans  &kp TAB    &kp Q   &kp W     &kp E       &kp R      &trans     &trans  &trans  &trans    &trans    &trans
+&trans  &kp LSHFT  &kp A   &kp S     &kp D       &kp F      &trans     &kp J   &kp K   &kp L     &kp SEMI  &trans
         &kp LCTRL  &kp Z   &kp X     &kp C       &kp V      &trans     &trans  &trans  &trans    &trans
                    &trans  &kp LALT  &mo GAME_P  &kp SPACE  &kp ENTER  &trans  &trans  &to BASE
             >;
@@ -223,8 +223,8 @@
             display-name = "game+";
             bindings = <
 &trans  &kp ESC  &kp N7  &kp N8  &kp N9  &kp T   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo 5    &kp N4  &kp N5  &kp N6  &kp M   &trans  &trans  &trans  &trans  &trans  &trans
-        &kp TAB  &kp N1  &kp N2  &kp N3  &kp B   &trans  &trans  &trans  &trans  &trans
+&trans  &mo 5    &kp N4  &kp N5  &kp N6  &kp G   &trans  &trans  &trans  &trans  &trans  &trans
+        &kp M    &kp N1  &kp N2  &kp N3  &kp B   &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
