@@ -92,16 +92,6 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
-        // Tap: qmark | Shift + tap: excl
-
-        qexcl: qexcl {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp QMARK>, <&kp EXCL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         // Tap: bspc | Shift + tap: esc
 
         bksp_esc_morph: bksp_esc_morph {
