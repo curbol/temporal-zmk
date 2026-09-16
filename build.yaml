@@ -1,0 +1,8 @@
+---
+include:
+  - board: nice_nano//zmk
+    shield: temporal_left nice_view
+    artifact-name: temporal_left
+  - board: nice_nano//zmk
+    shield: temporal_right nice_view
+    artifact-name: temporal_right
